@@ -2,7 +2,7 @@ include "%L"
 
 # XCompose file for hiraganas.
 # Most annoying side-effects: m+u is no longer the Greek mu (µ), 
-# and Romanian et Turkish b+a, b+e, b+e, b+i, b+o, and b+u (ă, ĕ, ĭ, ŏ and ŭ) work no longer  
+# and b+a (Romanian), b+e, b+i, b+o, and b+u (McCune-Reischauer) (ă, ĕ, ĭ, ŏ, and ŭ) work no longer  
 # s+o is no longer § (but S+O works)
 # also x+o is no longer ¤ (but X+O, X+o, x+O, and x+x work)
 
