@@ -81,3 +81,11 @@ include "%L"
 <Multi_key> <p> <u>  : "ぷ"
 <Multi_key> <p> <e>  : "ぺ"
 <Multi_key> <p> <o>  : "ぽ"
+
+# Some Japanese typographic symbols
+<Multi_key> <parenleft> <parenleft> : "「" # LEFT CORNER BRACKET (U+300C)
+<Multi_key> <parenright> <parenright> : "」" # RIGHT CORNER BRACKET (U+300D)
+
+# Other
+
+<Multi_key> <upper> <slash>  : "✓" # CHECK MARK (U+2713)
