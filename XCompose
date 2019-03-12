@@ -3,7 +3,7 @@ include "%L"
 # XCompose file for hiraganas.
 # Most annoying side-effects: m+u is no longer the Greek mu (µ), 
 # and b+a (Romanian), b+e, b+i, b+o, and b+u (McCune-Reischauer) (ă, ĕ, ĭ, ŏ, and ŭ) work no longer  
-# s+o is no longer § (but S+O works)
+# s+o is no longer § (but S+O and o+s work)
 # also x+o is no longer ¤ (but X+O, X+o, x+O, and x+x work)
 
 <Multi_key> <g> <a> : "が" # HIRAGANA LETTER GA
@@ -83,9 +83,61 @@ include "%L"
 <Multi_key> <p> <o>  : "ぽ"
 
 # Some Japanese typographic symbols
-<Multi_key> <parenleft> <parenleft> : "「" # LEFT CORNER BRACKET (U+300C)
-<Multi_key> <parenright> <parenright> : "」" # RIGHT CORNER BRACKET (U+300D)
+<Multi_key> <parenleft> <parenleft>   : "「" U300C # LEFT CORNER BRACKET
+<Multi_key> <parenright> <parenright> : "」" U300D # RIGHT CORNER BRACKET
 
-# Other
+# Overriding ş and ţ (Romanian)
+<Multi_key> <colon> <S>               : "Ș"   U0218 # LATIN CAPITAL LETTER S WITH COMMA BELOW
+<Multi_key> <S> <colon>               : "Ș"   U0218 # LATIN CAPITAL LETTER S WITH COMMA BELOW
+<Multi_key> <colon> <s>               : "ș"   U0219 # LATIN SMALL LETTER S WITH COMMA BELOW
+<Multi_key> <s> <colon>               : "ș"   U0219 # LATIN SMALL LETTER S WITH COMMA BELOW
+<Multi_key> <colon> <T>               : "Ț"   U021A # LATIN CAPITAL LETTER T WITH COMMA BELOW
+<Multi_key> <T> <colon>               : "Ț"   U021A # LATIN CAPITAL LETTER T WITH COMMA BELOW
+<Multi_key> <colon> <t>               : "ț"   U021B # LATIN SMALL LETTER T WITH COMMA BELOW
+<Multi_key> <t> <colon>               : "ț"   U021B # LATIN SMALL LETTER T WITH COMMA BELOW
+<Multi_key> <comma> <T>               : "Ț"   U021A # LATIN CAPITAL LETTER T WITH COMMA # colon or comma ?? TODO
+<Multi_key> <comma> <t>               : "ț"   U021B # LATIN SMALL LETTER T WITH COMMA
 
-<Multi_key> <upper> <slash>  : "✓" # CHECK MARK (U+2713)
+# Other Romanian
+
+<Multi_key> <u> <a>               : "ă"   U0103 # LATIN SMALL LETTER A WITH BREVE
+<Multi_key> <U> <a>               : "ă"   U0103 # LATIN SMALL LETTER A WITH BREVE
+
+# Turkish
+
+<Multi_key> <semicolon> <S>               : "Ş"   U015E # LATIN CAPITAL LETTER S WITH CEDILLA
+<Multi_key> <S> <semicolon>               : "Ş"   U015E # LATIN CAPITAL LETTER S WITH CEDILLA
+<Multi_key> <semicolon> <s>               : "ş"   U015F # LATIN SMALL LETTER S WITH CEDILLA
+<Multi_key> <s> <semicolon>               : "ş"   U015F # LATIN SMALL LETTER S WITH CEDILLA
+
+#<Multi_key> <equal> <greater>   : "⇒" U21D2 # RIGHTWARDS DOUBLE ARROW TODO overrides ≥
+
+<Multi_key> <o> <plus>                  : "⊕"   U2295 # Circled plus
+
+# Arrows
+<Multi_key> <minus> <greater>           : "→"   U2192 # Rightwards Arrow
+<Multi_key> <greater> <minus>           : "→"   U2192 # Rightwards Arrow
+<Multi_key> <less> <minus>              : "←"   U2190 # Leftwards Arrow
+<Multi_key> <minus> <less>              : "←"   U2190 # Leftwards Arrow
+<Multi_key> <bar> <greater>             : "↑"   U2191 # Upwards Arrow
+<Multi_key> <greater> <bar>             : "↑"   U2191 # Upwards Arrow
+<Multi_key> <bar> <less>                : "↓"   U2193 # Downwards Arrow
+<Multi_key> <less> <bar>                : "↓"   U2193 # Downwards Arrow
+<Multi_key> <less> <slash>              : "✓"   U2713 # CHECK MARK
+<Multi_key> <slash> <less>              : "✓"   U2713 # CHECK MARK
+<Multi_key> <upper> <slash>             : "✓"   U2713 # CHECK MARK TODO c'est quoi upper ?
+<Multi_key> <greater> <slash>           : "✓"   U2713 # CHECK MARK
+
+#Flowers
+<Multi_key> <o> <at>                    : "❀"   U2740 # White florette 
+<Multi_key> <at> <o>                    : "❀"   U2740 # White florette
+
+#Variæ
+<Multi_key> <o> <x>                     : "☠"   U2620 # Skull and crossbones
+<Multi_key> <colon> <parenright>        : "☺"   U263A # White smilling face
+<Multi_key> <greater> <less>            : "☢"   U2622 # Radioactive sign
+<Multi_key> <less> <3>                  : "♥"   U9829 # Black heart suit
+
+<Multi_key> <equal> <greater>           : "≥"   U2265 # GREATER-THAN OR EQUAL TO
+<Multi_key> <equal> <less>              : "≤"   U2264 # LESS-THAN OR EQUAL TO
+<Multi_key> <8> <8>                     : "∞"   U221E # 8 8 INFINITY
