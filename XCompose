@@ -85,6 +85,7 @@ include "%L"
 # Some Japanese typographic symbols
 <Multi_key> <parenleft> <parenleft>   : "「" U300C # LEFT CORNER BRACKET
 <Multi_key> <parenright> <parenright> : "」" U300D # RIGHT CORNER BRACKET
+<Multi_key> <o> <period>              : "。" U3002 # IDEOGRAPHIC FULL STOP
 
 # Overriding ş and ţ (Romanian)
 <Multi_key> <colon> <S>               : "Ș"   U0218 # LATIN CAPITAL LETTER S WITH COMMA BELOW
@@ -97,6 +98,14 @@ include "%L"
 <Multi_key> <t> <colon>               : "ț"   U021B # LATIN SMALL LETTER T WITH COMMA BELOW
 <Multi_key> <comma> <T>               : "Ț"   U021A # LATIN CAPITAL LETTER T WITH COMMA # colon or comma ?? TODO
 <Multi_key> <comma> <t>               : "ț"   U021B # LATIN SMALL LETTER T WITH COMMA
+
+# Greek
+<Multi_key> <g> <r> <a>            : "α"   U03B1 # GREEK SMALL LETTER ALPHA
+<Multi_key> <g> <r> <b>            : "β"   U03B2 # GREEK SMALL LETTER BETA
+<Multi_key> <g> <r> <g>            : "γ"   U03B3 # GREEK SMALL LETTER GAMMA
+<Multi_key> <g> <r> <d>            : "δ"   U03B4 # GREEK SMALL LETTER DELTA
+<Multi_key> <g> <r> <e>            : "ε"   U03B5 # GREEK SMALL LETTER EPSILON
+<Multi_key> <g> <r> <t>            : "τ"   U03A4 # GREEK SMALL LETTER TAU
 
 # Other Romanian
 
